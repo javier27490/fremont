@@ -1,0 +1,43 @@
+*{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap);
+}
+
+body{
+    width: auto;
+}
+
+nav{
+    display: flex;
+    width: auto;
+    margin: 102;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    width: 127px;
+    height: 40px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 16px;
+    list-style: none;
+    border-bottom: 2px solid #542c70;
+    margin-left: 38px;
+}
+
+
+#logo-nav{
+    width: 167px;
+    height: 110px;
+}
+
