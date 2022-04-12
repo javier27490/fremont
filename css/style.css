@@ -1,5 +1,6 @@
 *{
     text-decoration: none;
+    margin: auto;
 }
 
 @font-face {
@@ -11,10 +12,14 @@ body{
     width: auto;
 }
 
+header{
+    background-color: #e4e4e4;
+}
+
 nav{
     display: flex;
     width: auto;
-    margin: 102;
+    padding: 100px 0px 100px 0px;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -36,8 +41,76 @@ nav ul li{
 }
 
 
+#productos{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 200px;
+}
+
 #logo-nav{
     width: 167px;
     height: 110px;
 }
 
+#productos_articulos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1739px;
+    justify-content: flex-end;
+}
+
+#productos_articulos article{
+    width: 435px;
+    height: 435px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 38px;
+    border: 4px solid white;
+}
+
+#productos_articulos img{
+    position: absolute;
+}
+
+#productos_articulos p{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#terminaciones{
+    background-color: #0ad181;
+    padding: 120px 0 120px 0;
+}
+
+#terminaciones_articulos{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 1368px;
+}
+
+#terminaciones_articulos article{
+    margin: 60px;
+}
+
+#terminaciones_articulos article p{
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#terminaciones_articulos article img{
+    border-radius:160px;
+    margin-bottom: 50px;
+}
+
+#terminaciones_articulos article hr{
+    width: 124px;
+    border-color: #542c70;
+}
