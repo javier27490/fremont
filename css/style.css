@@ -77,6 +77,8 @@ nav ul li{
     font-family: 'Poppins';
     font-weight: bolder;
     font-size: 25px;
+    position: absolute;
+    color: white;
 }
 
 #terminaciones{
@@ -113,4 +115,50 @@ nav ul li{
 #terminaciones_articulos article hr{
     width: 124px;
     border-color: #542c70;
+}
+
+#precios h2{
+    font-family: 'poppins';
+    font-size: 65px;
+    font-weight: bolder;
+    color: #542c70;
+}
+
+.precio-producto p{
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 300;
+    color: #542c70;
+}
+
+table th{
+    font-family: 'poppins';
+    font-size: 29px;
+    font-weight: bold;
+    color: white;
+    background-color: #542c70;
+    padding: 7px;
+}
+
+#precios article{
+    width: 660px;
+    text-align: center;
+    background-color: white;
+}
+
+#descripcion-impresion{
+    background-color: e4e4e4;
+    font-family: 'poppins';
+    font-size: 15px;
+    font-weight: 300;
+    text-align: initial;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+}
+
+#precio-articulos{
+    display: flex;
+    flex-wrap: wrap;
 }
