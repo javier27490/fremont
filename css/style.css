@@ -40,6 +40,13 @@ nav ul li{
     margin-left: 38px;
 }
 
+#redes{
+    display: flex;
+}
+
+#redes img{
+    width: 28px;
+}
 
 #productos{
     display: flex;
@@ -143,7 +150,8 @@ table th{
 #precios article{
     width: 660px;
     text-align: center;
-    background-color: white;
+    border: solid 5px #EDEDED;
+    background-color: #ededed;
 }
 
 #descripcion-impresion{
@@ -161,4 +169,42 @@ table th{
 #precio-articulos{
     display: flex;
     flex-wrap: wrap;
+    background-color: #e4e4e4;
+}
+
+
+#quienes-somos{
+    background-color: 0ad181;
+    height: 800px;
+    display: flex;
+}
+
+#texto-quienes-somos{
+    width: 710px;
+    margin-right: 200px;
+}
+
+#texto-quienes-somos p{
+    font-family: 'poppins';
+    font-size: 24px;
+    color: #542c70;
+}
+
+#contacto{
+    height: 1080px;
+    background-color: #e4e4e4;
+}
+
+#contacto form{
+    box-shadow: grey;
+}
+
+#footer{
+    background-color: #0ad181;
+    height: 480px;
+    display: flex;
+}
+
+#footer img{
+    width: 200px;
 }
