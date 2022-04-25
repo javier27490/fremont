@@ -41,20 +41,65 @@ nav ul li{
 }
 
 #redes{
-    display: flex;
+    position: absolute;
+    right: 0;
+    top: -67px;
 }
 
 #redes img{
     width: 28px;
 }
 
+.back-text{
+    font-family: 'Poppins';
+    font-size: 171px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 0;
+}
+
+#bck-productos{
+    color: white;
+    transform: rotateZ(-90deg);
+}
+
+#bck-terminaciones{
+    color: #66ffad;
+    top: 45px;
+    left: 75;
+    z-index: 0;
+}
+
+#bck-precios{
+    color: white;
+    top: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#bck-quienes-somos{
+    color: #66ffad;
+    top: 50;
+    left: -65px;
+}
+
+#bck-contactos{
+    color: white;
+    transform: rotateZ(-90deg);
+    bottom: 260px;
+    left: -114px;
+}
+
 #productos{
     display: flex;
     justify-content: flex-end;
     padding-bottom: 200px;
+    position: relative;
+    background-color: #e4e4e4;
 }
 
-#logo-nav{
+#logo-nav img{
     width: 167px;
     height: 110px;
 }
@@ -74,10 +119,12 @@ nav ul li{
     align-items: center;
     margin: 38px;
     border: 4px solid white;
+    z-index: 1;
 }
 
 #productos_articulos img{
     position: absolute;
+    box-shadow: 0 0px 17px grey;
 }
 
 #productos_articulos p{
@@ -88,9 +135,17 @@ nav ul li{
     color: white;
 }
 
+#ubicacion_1{
+    width: 18px;
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+}
+
 #terminaciones{
     background-color: #0ad181;
     padding: 120px 0 120px 0;
+    position: relative;
 }
 
 #terminaciones_articulos{
@@ -104,7 +159,8 @@ nav ul li{
 }
 
 #terminaciones_articulos article{
-    margin: 60px;
+    margin: 100px 60px 60px 60px;
+    z-index: 1;
 }
 
 #terminaciones_articulos article p{
@@ -117,11 +173,24 @@ nav ul li{
 #terminaciones_articulos article img{
     border-radius:160px;
     margin-bottom: 50px;
+    box-shadow: 0 0px 17px grey;
 }
 
 #terminaciones_articulos article hr{
     width: 124px;
     border-color: #542c70;
+}
+
+#ubicacion_2{
+    width: 17;
+    position: absolute;
+    right: 60;
+    bottom: 60;
+}
+
+#precios{
+    position: relative;
+    background-color: #e4e4e4;
 }
 
 #precios h2{
@@ -150,8 +219,10 @@ table th{
 #precios article{
     width: 660px;
     text-align: center;
-    border: solid 5px #EDEDED;
+    border: solid 57px #EDEDED;
     background-color: #ededed;
+    box-shadow: 0 0px 17px grey;
+    margin-bottom: 50px;
 }
 
 #descripcion-impresion{
@@ -169,14 +240,44 @@ table th{
 #precio-articulos{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    height: 2600px;
+}
+
+#tarjetas-stickers{
+    position: absolute;
+    top: 277px;
+    left: 142px;
+}
+
+#folletos-carpetas{
+    position: absolute;
+    top: 638px;
+    right: 142px;
+}
+
+#pie-pagina-precios{
     background-color: #e4e4e4;
 }
 
+#pie-pagina-precios p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #542c70;
+}
+
+#ubicacion-3{
+    width: 108;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+}
 
 #quienes-somos{
     background-color: 0ad181;
     height: 800px;
     display: flex;
+    position: relative;
 }
 
 #texto-quienes-somos{
@@ -190,13 +291,46 @@ table th{
     color: #542c70;
 }
 
+#ubicacion-4{
+    position: absolute;
+    width: 107;
+    left: 60;
+    bottom: 60;
+}
+
 #contacto{
     height: 1080px;
     background-color: #e4e4e4;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 #contacto form{
-    box-shadow: grey;
+    width: 1225;
+    height: 681;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0px 17px grey;
+    z-index: 1;
+}
+
+#contacto form input{ 
+    width: 1065;
+    height: 60;
+}
+
+#contacto form textarea{
+    height: 280;
+    width: 1065; 
+}
+
+#ubicacion-5{
+    position: absolute;
+    width: 107;
+    right: 60;
+    bottom: 60;
 }
 
 #footer{
@@ -207,4 +341,22 @@ table th{
 
 #footer img{
     width: 200px;
+}
+
+.cls-1{
+    stroke: #0ad181;
+    fill: #0ad181;
+}
+
+.cls-2{
+    fill: #66ffad;
+    stroke: #66ffad ;
+}
+
+.cls-3{
+    stroke: #0ad181;
+}
+
+.cls-4{
+    stroke: #66ffad;
 }
