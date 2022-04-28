@@ -248,12 +248,14 @@ table th{
     position: absolute;
     top: 277px;
     left: 142px;
+    z-index: 1;
 }
 
 #folletos-carpetas{
     position: absolute;
     top: 638px;
     right: 142px;
+    z-index: 1;
 }
 
 #pie-pagina-precios{
@@ -314,6 +316,7 @@ table th{
     flex-direction: column;
     box-shadow: 0 0px 17px grey;
     z-index: 1;
+    background-color: #e4e4e4;
 }
 
 #contacto form input{ 
@@ -337,26 +340,66 @@ table th{
     background-color: #0ad181;
     height: 480px;
     display: flex;
+    position: relative;
 }
 
 #footer img{
     width: 200px;
 }
 
-.cls-1{
-    stroke: #0ad181;
-    fill: #0ad181;
+.circle-productos {
+    height: 1400px;
+    width: 1400px;
+    background-color: #0ad181;
+    border-radius: 50%;
+    position: absolute;
+    right: -550px;
+    top: -350px;
 }
 
-.cls-2{
-    fill: #66ffad;
-    stroke: #66ffad ;
+.circle-precios{
+    height: 1100px;
+    width: 1100px;
+    background-color: #0ad181;
+    border-radius: 50%;
+    position: absolute;
+    right: -550px;
+    top: 49px;
+    z-index: 0;
 }
 
-.cls-3{
-    stroke: #0ad181;
+.circle-precios2{
+    height: 1100px;
+    width: 1100px;
+    background-color: #0ad181;
+    border-radius: 50%;
+    position: absolute;
+    left: -550px;
+    bottom: 100px;
+    z-index: 0;
 }
 
-.cls-4{
-    stroke: #66ffad;
+.circle-contacto{
+    height: 700px;
+    width: 700px;
+    background-color: #0ad181;
+    border-radius: 50%;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    z-index: 0;
 }
+
+#fremont-bg-contacto{
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+}
+
+#fremont-bg-precios{
+    transform: rotateZ(-90deg);
+    position: absolute;
+    left: -90;
+    bottom: 200px;
+}
+
