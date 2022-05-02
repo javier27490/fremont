@@ -207,19 +207,37 @@ nav ul li{
     font-size: 18px;
     font-weight: 300;
     color: #542c70;
+    margin-bottom: 80px;
 }
 
-table th{
+.tabla-precios{
     font-family: 'poppins';
-    font-size: 29px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     background-color: #542c70;
     padding: 7px;
+    height: 50;
 }
 
+#tabla-modulos{
+    background: none;
+    color: black;
+    font-family: "poppins";
+}
+
+#th-1{
+    min-width: 170px;
+}
+
+#th-2{
+    min-width: 100px;
+}
+
+
+
 #precios article{
-    width: 660px;
+    width: 607px;
     text-align: center;
     border: solid 57px #EDEDED;
     background-color: #ededed;
@@ -243,7 +261,7 @@ table th{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    height: 2600px;
+    height: 2900px;
 }
 
 #tarjetas-stickers{
@@ -262,9 +280,13 @@ table th{
 
 #pie-pagina-precios{
     background-color: #e4e4e4;
+    margin: 20px;
+    border: solid 5px white;
+    padding: 62px 50px 62px 50px;
 }
 
 #pie-pagina-precios p{
+    font-family: 'poppins';
     font-size: 15px;
     font-weight: 300;
     color: #542c70;
