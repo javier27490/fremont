@@ -3,11 +3,6 @@
     margin: auto;
 }
 
-@font-face {
-    font-family: 'Poppins';
-    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap);
-}
-
 body{
     width: auto;
 }
@@ -32,7 +27,7 @@ nav ul li{
     width: 127px;
     height: 40px;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 16px;
     list-style: none;
