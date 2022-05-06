@@ -95,6 +95,7 @@ header{
     padding-bottom: 200px;
     position: relative;
     background-color: #e4e4e4;
+    z-index: 0;
 }
 
 #logo-header{
