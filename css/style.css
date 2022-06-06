@@ -159,7 +159,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 1368px;
+    width: 100%;
 }
 
 #terminaciones_articulos article{
@@ -195,6 +195,7 @@ header{
 #precios{
     position: relative;
     background-color: #e4e4e4;
+    overflow: hidden;
 }
 
 #precios h2{
@@ -264,6 +265,7 @@ header{
     flex-wrap: wrap;
     position: relative;
     height: 2900px;
+    width: 100%
 }
 
 #tarjetas-stickers{
@@ -429,6 +431,11 @@ header{
     bottom: 200px;
 }
 
+
+.fancybox__carousel {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 700px){
 
     #desktop-nav {
@@ -484,9 +491,6 @@ header{
         z-index: 2;
       }
 
-
-
-
       #mobile-nav  li {
         font-family: 'poppins';
         font-weight: bold;
@@ -499,5 +503,45 @@ header{
       /*Estilo cuando el mouse pasa encima de cada link del menu*/
       #mobile-nav  li:hover {
         filter: brightness(110%);
+      }
+
+      #productos_articulos article {
+        margin: 0;
+      }
+
+      .back-text {
+        display: none;
+      }
+
+      #precio-articulos {
+        flex-direction: column;
+        flex-flow: column;
+        height: 4258px;
+      }
+
+      #precios article {
+        margin-bottom: 0;
+      }
+
+      #tarjetas-stickers, #folletos-carpetas {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        margin-bottom: 0
+      }
+
+      #quienes-somos {
+        height: 100%;
+      }
+
+      #texto-quienes-somos {
+        width: 100%;
+        margin: 10% 16%;
+        overflow: hidden;
+      }
+
+      #contacto form input, #contacto form textarea {
+        width: 90%;
       }
 }
