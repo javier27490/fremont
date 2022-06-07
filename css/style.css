@@ -159,7 +159,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 100%;
+    width: 1368px;
 }
 
 #terminaciones_articulos article{
@@ -265,7 +265,7 @@ header{
     flex-wrap: wrap;
     position: relative;
     height: 2900px;
-    width: 100%
+    width: 70%
 }
 
 #tarjetas-stickers{
@@ -517,6 +517,7 @@ header{
         flex-direction: column;
         flex-flow: column;
         height: 4258px;
+        width: 100%;
       }
 
       #precios article {
@@ -543,5 +544,9 @@ header{
 
       #contacto form input, #contacto form textarea {
         width: 90%;
+      }
+
+      #terminaciones_articulos {
+        width: 100%;
       }
 }
