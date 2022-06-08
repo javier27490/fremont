@@ -230,8 +230,12 @@ header{
     font-weight: bold;
     color: white;
     background-color: #542c70;
-    padding: 7px;
+    padding: 0px 7px;
     height: 50;
+    border-collapse: collapse;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 #tabla-modulos{
@@ -241,14 +245,23 @@ header{
 }
 
 #th-1{
-    min-width: 170px;
-    font-weight: 600px;
+    min-width: 190px;
+    font-weight: 600;
     font-size: 1.3em;
+    text-align: left;
+    padding-left: 2%;
+    border-right: solid 3px #EDEDED;
+}
+
+#th-1 i {
+  font-weight: 300;
+  font-style: normal;
 }
 
 #th-2{
     min-width: 100px;
     font-weight: 600;
+    border-right: solid 3px #EDEDED;
 }
 
 #tabla-modulos #th-2 {
@@ -274,6 +287,16 @@ header{
     display: flex;
     align-items: center;
     padding-left: 35px;
+    padding-left: 2%;
+}
+
+#descripcion-impresion b {
+  display: contents;
+}
+
+#descripcion-impresion span {
+  color: #0ad181;
+  display: contents;
 }
 
 #precio-articulos{
@@ -531,6 +554,10 @@ header{
         display: none;
       }
 
+      .tabla-precios {
+        margin-left: 0;
+      }
+
       #precio-articulos {
         flex-direction: column;
         flex-flow: column;
@@ -540,6 +567,7 @@ header{
 
       #precios article {
         margin-bottom: 0;
+        border-left: 0;
       }
 
       #tarjetas-stickers, #folletos-carpetas {
@@ -547,7 +575,17 @@ header{
         top: 0;
         left: 0;
         margin-top: 0;
-        margin-bottom: 0
+        margin-bottom: 0;
+        margin-left: 0;
+      }
+
+      #th-1, #th-2 {
+          font-size: .6em;
+          min-width: 71px;
+      }
+
+      table.modulos {
+          margin-left: 1.5%;
       }
 
       #quienes-somos {
