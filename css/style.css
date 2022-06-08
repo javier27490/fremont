@@ -32,6 +32,10 @@ header{
     margin-left: 38px;
 }
 
+#desktop-nav ul li a {
+    font-weight: bold;
+}
+
 #redes{
     position: absolute;
     right: 0;
@@ -137,6 +141,7 @@ header{
     font-size: 25px;
     position: absolute;
     color: white;
+    letter-spacing: .1em;
 }
 
 #ubicacion_1{
@@ -231,13 +236,18 @@ header{
 
 #th-1{
     min-width: 170px;
+    font-weight: 600px;
+    font-size: 1.3em;
 }
 
 #th-2{
     min-width: 100px;
+    font-weight: 600;
 }
 
-
+#tabla-modulos #th-2 {
+  font-weight: 300;
+}
 
 #precios article{
     width: 607px;
@@ -252,7 +262,7 @@ header{
     background-color: e4e4e4;
     font-family: 'poppins';
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 200;
     text-align: initial;
     height: 86px;
     display: flex;
