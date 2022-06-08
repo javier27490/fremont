@@ -16,6 +16,8 @@ header{
     align-items: flex-end;
 }
 
+/* a:visited { color: inherit; } */
+
 #desktop-nav ul{
     display: flex;
 }
@@ -34,6 +36,10 @@ header{
 
 #desktop-nav ul li a {
     font-weight: bold;
+}
+
+#desktop-nav ul li a:visited, #desktop-nav ul li a {
+  color: #542c70;
 }
 
 #redes{
@@ -82,8 +88,8 @@ header{
 
 #bck-quienes-somos{
     color: #66ffad;
-    top: 50;
-    left: -65px;
+    top: 15%;
+    left: 0;
 }
 
 #bck-contactos{
@@ -114,24 +120,24 @@ header{
 #productos_articulos{
     display: flex;
     flex-wrap: wrap;
-    width: 1739px;
+    width: 1523px;
     justify-content: flex-end;
 }
 
-#productos_articulos article{
-    width: 435px;
-    height: 435px;
+#productos_articulos article {
+    width: 21em;
+    height: 21em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 38px;
+    margin: 1em 1.3em;
     border: 4px solid white;
     z-index: 1;
     cursor: pointer;
 }
 
 #productos_articulos img{
-    position: absolute;
+    width: 100%;
     box-shadow: 0 0px 17px grey;
 }
 
@@ -274,21 +280,22 @@ header{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    height: 2900px;
-    width: 70%
+    height: 3300px;
+    width: 60%;
+    min-width: 1500px;
 }
 
 #tarjetas-stickers{
     position: absolute;
     top: 277px;
-    left: 142px;
+    left: 0;
     z-index: 1;
 }
 
 #folletos-carpetas{
     position: absolute;
     top: 638px;
-    right: 142px;
+    right: 0;
     z-index: 1;
 }
 
@@ -322,7 +329,8 @@ header{
 
 #texto-quienes-somos{
     width: 710px;
-    margin-right: 200px;
+    margin-right: 19%;
+    z-index: 1;
 }
 
 #texto-quienes-somos p{
@@ -527,7 +535,7 @@ header{
         flex-direction: column;
         flex-flow: column;
         height: 4258px;
-        width: 100%;
+        width: 65%;
       }
 
       #precios article {
