@@ -67,7 +67,7 @@ header{
 #bck-productos{
     color: white;
     transform: rotateZ(-90deg);
-    left: -10%;
+    left: 0;
     top: 45%;
 }
 
@@ -244,6 +244,30 @@ header{
     font-family: "poppins";
 }
 
+#folletos-carpetas #tabla-modulos #th-1 {
+  min-width: 11em;
+}
+
+#folletos-carpetas #tabla-modulos #th-2 {
+  min-width: 7em;
+}
+
+#stickers #tabla-modulos #th-1 {
+  min-width: 11em;
+}
+
+#stickers #tabla-modulos #th-2 {
+  min-width: 7em;
+}
+
+#carpetas #tabla-modulos #th-1 {
+  min-width: 14em;
+}
+
+#carpetas #tabla-modulos #th-2 {
+  min-width: 9em;
+}
+
 #th-1{
     min-width: 190px;
     font-weight: 600;
@@ -275,6 +299,7 @@ header{
     background-color: #ededed;
     box-shadow: 0 0px 17px grey;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
 #descripcion-impresion{
@@ -286,8 +311,9 @@ header{
     height: 86px;
     display: flex;
     align-items: center;
-    padding-left: 35px;
     padding-left: 2%;
+    width: 97%;
+    margin-left: 0;
 }
 
 #descripcion-impresion b {
@@ -378,19 +404,30 @@ header{
 }
 
 #contacto form{
-    width: 1225;
-    height: 681;
+    width: 1225px;
+    height: 640px;
     display: flex;
     align-items: center;
     flex-direction: column;
     box-shadow: 0 0px 17px grey;
     z-index: 1;
     background-color: #e4e4e4;
+    padding-top: 6%;
+}
+
+#contacto form input, #contacto form textarea {
+  border: none;
+  padding: 2%;
+  margin-bottom: 3%;
+  margin-top: 0;
 }
 
 #contacto form input{
     width: 1065;
-    height: 60;
+    height: 8%;
+}
+#contacto form input[type=submit] {
+    padding-bottom: 3%;
 }
 
 #contacto form textarea{
@@ -561,13 +598,25 @@ header{
       #precio-articulos {
         flex-direction: column;
         flex-flow: column;
-        height: 4258px;
+        height: 4510px;
         width: 65%;
       }
 
+      .circle-precios2 {
+        display: none;
+      }
+
+      #precios {
+        width: 100%;
+      }
+
       #precios article {
-        margin-bottom: 0;
         border-left: 0;
+        width: 24em;
+        margin: 0 auto;
+        border-right: 0;
+        margin-left: 1%;
+        margin-right: 1%;
       }
 
       #tarjetas-stickers, #folletos-carpetas {
@@ -594,8 +643,12 @@ header{
 
       #texto-quienes-somos {
         width: 100%;
-        margin: 10% 16%;
+        margin: 10% 6%;
         overflow: hidden;
+      }
+
+      #contacto form {
+          margin: 0;
       }
 
       #contacto form input, #contacto form textarea {
@@ -605,4 +658,16 @@ header{
       #terminaciones_articulos {
         width: 100%;
       }
+}
+
+::placeholder {
+  color: #808080;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #808080;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #808080;
 }
