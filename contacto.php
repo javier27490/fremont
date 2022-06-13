@@ -3,97 +3,58 @@
  * @version 1.0
  */
 
- debug_to_console("0");
+require("class.phpmailer.php");
+require("class.smtp.php");
+
+// Valores enviados desde el formulario
+if ( !isset($_POST["nombre"]) || !isset($_POST["email"]) || !isset($_POST["mensaje"]) ) {
+    die ("Es necesario completar todos los datos del formulario");
+}
+
+$nombre = $_POST["nombre"];
+$email = $_POST["email"];
+$mensaje = $_POST["mensaje"];
 
 
- require("Exception.php");
- require("PHPMailer.php");
- require("SMTP.php");
+// Datos de la cuenta de correo utilizada para enviar vía SMTP
+$smtpHost = "c2511004.ferozo.com";  // Dominio alternativo brindado en el email de alta
+$smtpUsuario = "no-reply@c2511004.ferozo.com";  // Mi cuenta de correo
+$smtpClave = "xxxxxxxx";  // Mi contraseña
 
- include "emails/PHPMailer/PHPMailerAutoload.php";
+// Email donde se enviaran los datos cargados en el formulario de contacto
+$emailDestino = "fremontsantafe@gmail.com";
 
-
-
- use PHPMailer\PHPMailer\PHPMailer;
- use PHPMailer\PHPMailer\SMTP;
- use PHPMailer\PHPMailer\Exception;;
- debug_to_console("1");
-
- session_start();
- debug_to_console("2");
-
-
- function debug_to_console($data) {
-     $output = $data;
-     if (is_array($output))
-         $output = implode(',', $output);
-
-     echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
- }
-
- if(isset($_POST['send'])){
-
-     // $email = $_POST['email'];
-     $email = 'email@miod.com';
-     $subject = '$subject';
-     $message = 'message';
+$mail = new PHPMailer();
+$mail->IsSMTP();
+$mail->SMTPAuth = true;
+$mail->Port = 465;
+$mail->SMTPSecure = 'ssl';
+$mail->IsHTML(true);
+$mail->CharSet = "utf-8";
 
 
-     //Load composer's autoloader
-     // require 'vendor/autoload.php';
+// VALORES A MODIFICAR //
+$mail->Host = $smtpHost;
+$mail->Username = $smtpUsuario;
+$mail->Password = $smtpClave;
 
-     // $mail = new PHPMailer(true);
+$mail->From = $email; // Email desde donde envío el correo.
+$mail->FromName = $nombre;
+$mail->AddAddress($emailDestino); // Esta es la dirección a donde enviamos los datos del formulario
 
-     $mail = new PHPMailer();
+$mail->Subject = "Mensaje enviado desde la web"; // Este es el titulo del email.
+$mensajeHtml = nl2br($mensaje);
+$mail->Body = "{$mensajeHtml} <br /><br />Formulario de ejemplo. By DonWeb<br />"; // Texto del email en formato HTML
+$mail->AltBody = "{$mensaje} \n\n Formulario de ejemplo By DonWeb"; // Texto sin formato HTML
+// FIN - VALORES A MODIFICAR //
 
-     try {
-         debug_to_console("3");
-         //Server settings
-         $mail->isSMTP();
-         $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-         $mail->Host = 'c1450521.ferozo.com';
-         // $mail->Host = 'aspmx.l.google.com';
-         $mail->SMTPAuth = true;
-         $mail->Username = 'info@xxx.com';
-         $mail->Password = 'xxxxxx';
-         $mail->SMTPOptions = array(
-             'ssl' => array(
-             'verify_peer' => false,
-             'verify_peer_name' => false,
-             'allow_self_signed' => true
-             )
-         );
-         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-         $mail->Port = 465;
-         // $mail->SMTPSecure = 'tls';
-         // $mail->SMTPAuth = false;
-         debug_to_console("4");
-         //Send Email
-         $mail->setFrom('info@xxx.com');
-         $mail->addReplyTo('info@xxx.com');
-
-         //Recipients
-         $mail->addAddress('xxx@gmail.com');
-
-         debug_to_console("5");
-         //Content
-         $mail->isHTML(true);
-         $mail->Subject = $subject;
-         $mail->Body    = $message;
-
-         debug_to_console("6");
-         $mail->send();
-         debug_to_console("7");
-
-        $_SESSION['result'] = 'Message has been sent';
- 	     $_SESSION['status'] = 'ok';
-        debug_to_console("8");
-     } catch (Exception $e) {
-       debug_to_console("10 {$mail->ErrorInfo}");;
- 	    $_SESSION['result'] = 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo;
- 	    $_SESSION['status'] = 'error';
-     }
-
- 	    header("location: index.html");
- }
- ?>
+$estadoEnvio = $mail->Send();
+if($estadoEnvio){
+    $_SESSION['result'] = 'Message has been sent';
+    $_SESSION['status'] = 'ok';
+    echo "El correo fue enviado correctamente.";
+} else {
+    $_SESSION['result'] = 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo;
+    $_SESSION['status'] = 'error';
+    echo "Ocurrió un error inesperado.";
+}
