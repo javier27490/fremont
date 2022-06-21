@@ -585,6 +585,8 @@ header{
 
       #productos_articulos article {
         margin: 0;
+        width: 11.6em;
+        height: 11.6em;
       }
 
       .back-text {
@@ -657,6 +659,26 @@ header{
 
       #terminaciones_articulos {
         width: 100%;
+      }
+
+      #terminaciones_articulos article {
+        margin: 0;
+        width: 10em;
+        margin-bottom: 1em;
+      }
+
+      #terminaciones_articulos article img {
+        width: 6em;
+        margin-bottom: 1em;
+      }
+
+      #terminaciones_articulos article p {
+        font-size: .9em;
+        margin-bottom: 0.5em;
+      }
+
+      #productos_articulos p {
+        font-size: .8em;
       }
 }
 
