@@ -314,6 +314,7 @@ header{
     padding-left: 2%;
     width: 97%;
     margin-left: 0;
+    margin-bottom: 1em;
 }
 
 #descripcion-impresion b {
@@ -595,12 +596,13 @@ header{
 
       .tabla-precios {
         margin-left: 0;
+        height: 1.7em;
       }
 
       #precio-articulos {
         flex-direction: column;
         flex-flow: column;
-        height: 4510px;
+        height: 2765px;
         width: 65%;
       }
 
@@ -679,6 +681,29 @@ header{
 
       #productos_articulos p {
         font-size: .8em;
+      }
+
+      #precios h2 {
+        font-size: 2em;
+      }
+
+      .precio-producto p {
+        font-size: .7em;
+        margin-bottom: 3em;
+      }
+
+      #descripcion-impresion {
+        font-size: .6em;
+        height: 5em;
+      }
+
+      #pie-pagina-precios {
+        margin: 4% 0;
+        padding: 6% 4%;
+      }
+
+      #pie-pagina-precios p {
+        font-size: .6em;
       }
 }
 
