@@ -292,6 +292,10 @@ header{
   font-weight: 300;
 }
 
+article table .last {
+  border-right: 0 !important;
+}
+
 #precios article{
     width: 607px;
     text-align: center;
@@ -312,7 +316,7 @@ header{
     display: flex;
     align-items: center;
     padding-left: 2%;
-    width: 97%;
+    width: 100%;
     margin-left: 0;
     margin-bottom: 1em;
 }
@@ -597,6 +601,8 @@ header{
       .tabla-precios {
         margin-left: 0;
         height: 1.7em;
+        width: 97%;
+        margin-left: 2%;
       }
 
       #precio-articulos {
@@ -634,7 +640,7 @@ header{
 
       #th-1, #th-2 {
           font-size: .6em;
-          min-width: 71px;
+          min-width: 70px;
       }
 
       table.modulos {
@@ -695,6 +701,8 @@ header{
       #descripcion-impresion {
         font-size: .6em;
         height: 5em;
+        margin-left: 2%;
+        width: 94.3%;
       }
 
       #pie-pagina-precios {
