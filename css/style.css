@@ -5,6 +5,7 @@
 
 body{
     width: auto;
+    background-color: #e4e4e4;
 }
 
 header{
@@ -14,6 +15,7 @@ header{
     padding: 100px 0px 100px 0px;
     justify-content: space-between;
     align-items: flex-end;
+    max-width: 1200px;
 }
 
 /* a:visited { color: inherit; } */
@@ -48,6 +50,10 @@ header{
     top: -67px;
 }
 
+#redes a{
+    margin: 5px 0;
+}
+
 #redes img{
     width: 28px;
 }
@@ -66,9 +72,8 @@ header{
 
 #bck-productos{
     color: white;
-    transform: rotateZ(-90deg);
-    left: 0;
-    top: 45%;
+    top: -17%;
+    left: 20%;
 }
 
 #bck-terminaciones{
@@ -94,9 +99,7 @@ header{
 
 #bck-contactos{
     color: white;
-    transform: rotateZ(-90deg);
-    bottom: 260px;
-    left: -114px;
+    top: 0;
 }
 
 #productos{
@@ -110,6 +113,8 @@ header{
 
 #logo-header{
     z-index: 1;
+    position: absolute;
+    left: 3%;
 }
 
 #logo-header img{
@@ -120,25 +125,23 @@ header{
 #productos_articulos{
     display: flex;
     flex-wrap: wrap;
-    width: 1523px;
+    width: 1200px;
     justify-content: flex-end;
 }
 
 #productos_articulos article {
-    width: 21em;
-    height: 21em;
+    width: 17em;
+    height: 17em;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1em 1.3em;
-    border: 4px solid white;
     z-index: 1;
     cursor: pointer;
 }
 
 #productos_articulos img{
     width: 100%;
-    box-shadow: 0 0px 17px grey;
 }
 
 #productos_articulos p{
@@ -236,6 +239,7 @@ header{
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+    margin-bottom: 1%;
 }
 
 #tabla-modulos{
@@ -249,7 +253,7 @@ header{
 }
 
 #folletos-carpetas #tabla-modulos #th-2 {
-  min-width: 7em;
+  min-width: 6em;
 }
 
 #stickers #tabla-modulos #th-1 {
@@ -257,11 +261,11 @@ header{
 }
 
 #stickers #tabla-modulos #th-2 {
-  min-width: 7em;
+  min-width: 6em;
 }
 
 #carpetas #tabla-modulos #th-1 {
-  min-width: 14em;
+  min-width: 15em !important;
 }
 
 #carpetas #tabla-modulos #th-2 {
@@ -269,7 +273,7 @@ header{
 }
 
 #th-1{
-    min-width: 190px;
+    min-width: 10em !important;
     font-weight: 600;
     font-size: 1.3em;
     text-align: left;
@@ -292,12 +296,20 @@ header{
   font-weight: 300;
 }
 
+#tabla-modulos th {
+  min-width: 6em;
+}
+
+#tabla-modulos #th-1 {
+  min-width: 13em !important;
+}
+
 article table .last {
   border-right: 0 !important;
 }
 
 #precios article{
-    width: 607px;
+    width: 570px;
     text-align: center;
     border: solid 57px #EDEDED;
     background-color: #ededed;
@@ -318,7 +330,7 @@ article table .last {
     padding-left: 2%;
     width: 100%;
     margin-left: 0;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 #descripcion-impresion b {
@@ -336,7 +348,7 @@ article table .last {
     position: relative;
     height: 3300px;
     width: 60%;
-    min-width: 1500px;
+    min-width: 1412px;
 }
 
 #tarjetas-stickers{
@@ -355,9 +367,10 @@ article table .last {
 
 #pie-pagina-precios{
     background-color: #e4e4e4;
-    margin: 20px;
-    border: solid 5px white;
+    margin: 20px 0;
+    border: solid 10px #e4e4e4;
     padding: 62px 50px 62px 50px;
+    box-shadow: inset 0px 0px 0px .2em #ededed;
 }
 
 #pie-pagina-precios p{
@@ -508,10 +521,7 @@ article table .last {
 }
 
 #fremont-bg-precios{
-    transform: rotateZ(-90deg);
-    position: absolute;
-    left: -90;
-    bottom: 200px;
+    top: 0;
 }
 
 
@@ -526,9 +536,12 @@ article table .last {
     }
     #mobile-nav {
         display: block;
+        margin-top: 3px;
     }
 
-
+    #redes a {
+        display: block;
+    }
 
     #mobile-nav  input:checked  ~ ul{
         display:block;
@@ -588,6 +601,14 @@ article table .last {
         filter: brightness(110%);
       }
 
+      #productos_articulos {
+        margin: 0 2%;
+      }
+
+      #productos {
+        padding-bottom: 18%;
+      }
+
       #productos_articulos article {
         margin: 0;
         width: 11.6em;
@@ -608,7 +629,7 @@ article table .last {
       #precio-articulos {
         flex-direction: column;
         flex-flow: column;
-        height: 2765px;
+        height: 2893px;
         width: 65%;
       }
 
@@ -638,7 +659,12 @@ article table .last {
         margin-left: 0;
       }
 
-      #th-1, #th-2 {
+      #th-1 {
+          font-size: .6em;
+          min-width: 70px;
+      }
+
+      #th-2 {
           font-size: .6em;
           min-width: 70px;
       }
@@ -648,7 +674,8 @@ article table .last {
       }
 
       #quienes-somos {
-        height: 100%;
+        height: 90%;
+        padding-top: 15%;
       }
 
       #texto-quienes-somos {
@@ -659,10 +686,17 @@ article table .last {
 
       #contacto form {
           margin: 0;
+          padding-top: 24%;
+          height: 600px;
       }
 
       #contacto form input, #contacto form textarea {
         width: 90%;
+        margin-bottom: 6%;
+      }
+
+      #terminaciones {
+        padding: 4em 0 0em 0;
       }
 
       #terminaciones_articulos {
@@ -672,7 +706,7 @@ article table .last {
       #terminaciones_articulos article {
         margin: 0;
         width: 10em;
-        margin-bottom: 1em;
+        margin-bottom: 4em;
       }
 
       #terminaciones_articulos article img {
@@ -706,12 +740,20 @@ article table .last {
       }
 
       #pie-pagina-precios {
-        margin: 4% 0;
+        margin:  4% 2%;
         padding: 6% 4%;
       }
 
       #pie-pagina-precios p {
         font-size: .6em;
+      }
+
+      svg {
+        display: none;
+      }
+
+      #contacto {
+        height: 663px;
       }
 }
 
