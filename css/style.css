@@ -534,9 +534,15 @@ article table .last {
     #desktop-nav {
         display: none;
     }
+
     #mobile-nav {
         display: block;
-        margin-top: 3px;
+        margin-right: 1.7em;
+        margin-bottom: 9px;
+    }
+
+    #redes  {
+        display: none;
     }
 
     #redes a {
@@ -557,7 +563,6 @@ article table .last {
         border: 1px solid black;
         border-radius: 5px;
         width: 30px;
-        height: 30px;
         line-height: 30px;
         font-weight: bold;
         text-align: center;
@@ -576,7 +581,7 @@ article table .last {
 
       #mobile-nav  ul{
         margin-top:0;
-        padding: 0;
+        padding: 20% 0;
         width: 200px;
         position: absolute;
         display: none;
@@ -589,11 +594,12 @@ article table .last {
 
       #mobile-nav  li {
         font-family: 'poppins';
-        font-weight: bold;
+        font-weight: 300;
         display: block;
         margin: 0;
-        padding: 10px;
+        padding: 7px 22px;
         list-style: none;
+        font-size: .9em;
     }
 
       /*Estilo cuando el mouse pasa encima de cada link del menu*/
@@ -601,8 +607,14 @@ article table .last {
         filter: brightness(110%);
       }
 
+      p.p-sticker-circulares {
+        max-width: 7em;
+        text-align: center;
+      }
+
       #productos_articulos {
-        margin: 0 2%;
+        margin: 0 4%;
+        justify-content: center;
       }
 
       #productos {
@@ -610,9 +622,9 @@ article table .last {
       }
 
       #productos_articulos article {
-        margin: 0;
-        width: 11.6em;
-        height: 11.6em;
+        margin: 0.5em;
+        width: 10em;
+        height: 10em;
       }
 
       .back-text {
@@ -754,6 +766,16 @@ article table .last {
 
       #contacto {
         height: 663px;
+      }
+
+      #logo-header img {
+        width: 134px;
+        height: 110px;
+        margin-left: 22%;
+      }
+
+      header {
+        padding: 100px 0px 28px 0px;
       }
 }
 
