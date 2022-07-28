@@ -79,15 +79,15 @@ header{
 
 #bck-terminaciones{
     color: #66ffad;
-    top: 45px;
-    left: 75;
+    top: 0;
+    left: 5%;
     z-index: 0;
     font-size: 120px;
 }
 
 #bck-precios{
     color: white;
-    top: 4%;
+    top: 1.7%;
     left: 0;
     right: 0;
     text-align: center;
@@ -95,8 +95,8 @@ header{
 
 #bck-quienes-somos{
     color: #66ffad;
-    top: 9%;
-    left: 10%;
+    top: 0;
+    left: 0;
 }
 
 #bck-contactos{
@@ -167,6 +167,12 @@ header{
     background-color: #0ad181;
     padding: 55px 0 120px 0;
     position: relative;
+}
+
+#terminaciones-wrapper {
+  width: 1550px;
+  display: block;
+  position: relative;
 }
 
 #terminaciones_articulos{
@@ -361,21 +367,21 @@ article table .last {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    height: 3100px;
+    height: 3000px;
     width: 60%;
     min-width: 1412px;
 }
 
 #tarjetas-stickers{
     position: absolute;
-    top: 277px;
+    top: 177px;
     left: 0;
     z-index: 1;
 }
 
 #folletos-carpetas{
     position: absolute;
-    top: 638px;
+    top: 538px;
     right: 0;
     z-index: 1;
 }
@@ -410,10 +416,20 @@ article table .last {
     position: relative;
 }
 
+#quienes-somos-wrapper {
+  width: 1550px;
+  display: block;
+  height: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+
 #texto-quienes-somos{
-    width: 568px;
-    margin-right: 13%;
-    z-index: 1;
+  width: 568px;
+  margin-right: 8%;
+  z-index: 99999999999999;
+  margin-top: 5%;
+  position: relative;
 }
 
 #texto-quienes-somos p{
@@ -421,6 +437,8 @@ article table .last {
     font-size: 19px;
     color: #542c70;
     margin-top: 39px;
+    z-index: 923038290482309;
+    position: absolute;
 }
 
 #ubicacion-4{
@@ -708,14 +726,17 @@ p.p-sticker-circulares {
       }
 
       #quienes-somos {
-        height: 47%;
+        height: 40%;
         padding-top: 15%;
+      }
+
+      #quienes-somos-wrapper {
+        margin-top: 0;
       }
 
       #texto-quienes-somos {
         width: 100%;
         margin: 0% 6%;
-        overflow: hidden;
       }
 
       #contacto form {
@@ -731,6 +752,10 @@ p.p-sticker-circulares {
 
       #terminaciones {
         padding: 4em 0 0em 0;
+      }
+
+      #terminaciones-wrapper {
+        width: inherit;
       }
 
       #terminaciones_articulos {
@@ -814,7 +839,11 @@ p.p-sticker-circulares {
       min-width: 22em !important;
     }
 
-    #folletos-carpetas #tabla-modulos #th-1 {
+    #carpetas #tabla-modulos #th-1 {
+      min-width: 17em !important;
+    }
+
+    #folletos #tabla-modulos #th-1 {
       min-width: 15em !important;
     }
 
@@ -827,7 +856,19 @@ p.p-sticker-circulares {
       min-width: 14.7em !important;
     }
 
-    #carpetas #tabla-modulos #th-2 {}
+    #carpetas #th-1  {
+      min-width: 11.5em !important;
+    }
+
+    #carpetas #th-2 {
+      min-width: 6.7em;
+    }
+
+    #carpetas #tabla-modulos #th-2 {
+      font-size: .55em;
+      line-height: 1.2em;
+      min-width: 9.5em;
+    }
 
     #texto-quienes-somos p {
       font-size: 15px;
