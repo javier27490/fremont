@@ -3,6 +3,10 @@
     margin: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     width: auto;
     background-color: #e4e4e4;
@@ -58,6 +62,21 @@ header{
 #redes img{
     width: 28px;
 }
+
+#redes-footer{
+  position: absolute;
+  right: 16px;
+  top: 8px;
+}
+
+#redes-footer a{
+  margin: 5px 3px;
+}
+
+#redes-footer img{
+  width: 28px !important;
+}
+
 
 #mobile-nav{
     display: none;
@@ -271,11 +290,11 @@ header{
 }
 
 #stickers #tabla-modulos #th-1 {
-  min-width: 11em;
+  min-width: 14.5em !important;
 }
 
 #stickers #tabla-modulos #th-2 {
-  min-width: 6em;
+  min-width: 8em;
 }
 
 #carpetas #tabla-modulos #th-1 {
@@ -726,7 +745,7 @@ p.p-sticker-circulares {
       }
 
       #quienes-somos {
-        height: 40%;
+        height: 36%;
         padding-top: 15%;
       }
 
@@ -881,6 +900,10 @@ p.p-sticker-circulares {
 
     #footer {
       height: 250px;
+    }
+
+    #stickers #tabla-modulos #th-2 {
+      min-width: 6em;
     }
 }
 
